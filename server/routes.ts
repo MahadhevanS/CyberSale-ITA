@@ -213,7 +213,7 @@ export async function registerRoutes(
       const tool = await storage.getTool(toolId);
       if (!tool) return res.status(404).json({ message: "Tool not found" });
 
-      const auctionEndAt = new Date(Date.now() + 3 * 60 * 1000);
+      const auctionEndAt = new Date(Date.now() + 60 * 1000);
 
       await storage.resetToolForAuction(toolId, auctionEndAt);
 
