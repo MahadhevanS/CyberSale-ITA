@@ -267,6 +267,9 @@ export default function Auction() {
               <p className="text-xs text-muted-foreground mt-2">
                 {tool.description}
               </p>
+              <div className="mt-3 text-sm font-mono text-primary">
+                Strength: {activeTool.strength}
+              </div>              
               <div className="mt-3 text-primary font-bold">
                 ₵{tool.base_price}
               </div>
