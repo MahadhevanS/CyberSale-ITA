@@ -162,7 +162,9 @@ export default function Auction() {
           <p className="text-muted-foreground mt-4">
             {activeTool.description}
           </p>
-
+          <div className="mt-3 text-sm font-mono text-primary">
+            Strength: {activeTool.strength}
+          </div>
           <div className="flex justify-between items-center mt-6">
             <div>
               <div className="text-sm uppercase text-muted-foreground">
